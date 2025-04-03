@@ -1,0 +1,33 @@
+<!-- <p>
+  time-input works!
+</p> -->
+<img id="night-img" src="assets/nightbutton.png" alt="Panda on Moon">
+
+<div id="button_1">
+  <h1>Start Time:</h1>
+
+  <ion-datetime-button class="time-input" datetime="datetime1"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime1" presentation="time" (ionChange) = "startTimeChangeEvent($event)"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+</div>
+
+
+
+<p></p>
+
+<div id="button_2">
+  <h1>End Time:</h1>
+  <ion-datetime-button class="time-input" datetime="datetime2"></ion-datetime-button>
+
+  <ion-modal [keepContentsMounted]="true">
+    <ng-template>
+      <ion-datetime id="datetime2" presentation="time" (ionChange) = "endTimeChangeEvent($event)"></ion-datetime>
+    </ng-template>
+  </ion-modal>
+</div>
+
+<ion-button color="primary" expand="block" id="save-button" (click)="saveEvent($event)">SAVE</ion-button>

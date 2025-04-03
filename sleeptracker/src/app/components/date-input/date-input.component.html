@@ -1,0 +1,26 @@
+<ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime
+      id="datetime"
+      presentation="date"
+      [formatOptions]="{
+        date: {
+          weekday: 'short',
+          month: 'long',
+          day: '2-digit',
+        },
+        time: {
+          hour: '2-digit',
+          minute: '2-digit',
+        },
+      }"
+      (ionChange)="dateChangeEvent($event)"
+      color="secondary"
+    ></ion-datetime>
+  </ng-template>
+</ion-modal>
+
+<!-- <p>Selected Date: {{ selectedDate }}</p> -->
+

@@ -1,0 +1,23 @@
+#back-navigation {
+    width: 8vh;
+    padding: 0;
+    margin-left:1px;
+}
+
+#nav-label {
+    padding:0;
+    margin-top:-5px;
+    margin-left:10px;
+    transform: translateY(-6px);
+    font-size: 2vh;
+    position:absolute;
+}
+
+app-date-input {
+    display: block;
+}
+
+p {
+    margin-top: 10%;
+    text-align: center;
+}

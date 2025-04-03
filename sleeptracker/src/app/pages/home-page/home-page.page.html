@@ -1,0 +1,48 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      SnoreScope
+    </ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- TEST, should only import as needed -->
+    <ion-grid id="nav-button">
+      <ion-row>
+        <a href="/day-input-page" id="day-navigation">
+          <img src="assets/daynav.png" alt="Navigation to day log">
+        </a>
+      </ion-row>
+        <h4 id="nav-label">Log My Day</h4>
+
+      <ion-row>
+        <a href="/sleep-data-page" id="night-stats">
+          <img src="assets/datanav.png" alt="Navigation to statistics">
+        </a>
+      </ion-row>
+        <h4 id="nav-label-stats">View Sleep Data</h4>
+    </ion-grid>
+    <ion-grid>
+      <ion-row>
+        <ion-col id="header-col">
+          <h1>My Sleep on</h1> 
+        
+          <app-date-input id="date-input"></app-date-input>
+        </ion-col>
+      </ion-row>
+
+      <!-- <img -->
+      <!-- <app-day-calendar></app-day-calendar> -->
+      <!-- <app-day-scale></app-day-scale> -->
+      <!-- <app-sleep-calendar></app-sleep-calendar> -->
+      <!-- <app-sleep-chart></app-sleep-chart> -->
+      <app-night-input></app-night-input>
+      <!-- <app-day-input></app-day-input> -->
+    </ion-grid>
+</ion-content>

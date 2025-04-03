@@ -1,0 +1,42 @@
+<ion-grid>
+  <div class="cc-selector">
+    <ion-row class="rating-images ion-justify-content-center">
+      <ion-col>
+        <input id="image7" type="radio" name="img" value="seven" (click)="imageEvent(7)">
+        <label class="image-cc seven"for="image7"></label>
+        <h4 class="image-label">near-sleep</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image6" type="radio" name="img" value="six" (click)="imageEvent(6)"/>
+        <label class="image-cc six"for="image6"></label>
+        <h4 class="image-label">sleepy</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image5" type="radio" name="img" value="five" (click)="imageEvent(5)"/>
+        <label class="image-cc five"for="image5"></label>
+        <h4 class="image-label">foggy</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image4" type="radio" name="img" value="four" (click)="imageEvent(4)"/>
+        <label class="image-cc four"for="image4"></label>
+        <h4 class="image-label">foggy-ish</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image3" type="radio" name="img" value="three" (click)="imageEvent(3)"/>
+        <label class="image-cc three"for="image3"></label>
+        <h4 class="image-label">awake</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image2" type="radio" name="img" value="two" (click)="imageEvent(2)"/>
+        <label class="image-cc two"for="image2"></label>
+        <h4 class="image-label">functioning</h4>
+      </ion-col>
+      <ion-col>
+        <input id="image1" type="radio" name="img" value="one" checked="checked" (click)="imageEvent(1)"/>
+        <label class="image-cc one" for="image1"></label>
+        <h4 class="image-label">active</h4>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-grid>
+<!-- or make only one id and class and then repeat in html for pages based on given id and label -->

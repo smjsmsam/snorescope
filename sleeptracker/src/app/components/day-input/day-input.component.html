@@ -1,0 +1,17 @@
+<img id="day-img" src="assets/daybutton.png" alt="Panda on Sun Graphic">
+
+
+<app-day-scale></app-day-scale>
+
+<div id="button_1">
+  <h1>Time:</h1>
+  <ion-datetime-button class="time-input" datetime="datetime0"></ion-datetime-button>
+
+<ion-modal [keepContentsMounted]="true">
+  <ng-template>
+    <ion-datetime id="datetime0" presentation="time" (ionChange) = "dateTimeChangeEvent($event)"></ion-datetime>
+  </ng-template>
+</ion-modal>
+</div>
+
+<ion-button expand="block" id='saveEvent' (click)="saveEvent($event)">SAVE</ion-button>

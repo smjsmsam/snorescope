@@ -1,0 +1,15 @@
+<ion-content>
+  <ion-grid id="nav-button">
+    <ion-row>
+      <a href="/home-page" id="back-navigation">
+        <img src="assets/backbutton.png" alt="Navigation to home page">
+      </a>
+    </ion-row>
+      <h4 id="nav-label">Back</h4>
+  </ion-grid>
+  <p id="titleText">How I Slept on the Week of</p>
+  <app-date-input></app-date-input>
+  <app-sleep-chart id="chart"></app-sleep-chart>
+  <app-sleep-calendar id="calendar"></app-sleep-calendar>
+  <ion-button color="primary" id="switchButton" (click)="switchVis($event)">View Daily Sleep</ion-button>
+</ion-content>

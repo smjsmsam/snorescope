@@ -1,0 +1,86 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+html * {
+    font-family: sniglet !important;
+}
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+// @import '@ionic/angular/css/palettes/dark.system.css';
+
+:root {
+    --ion-color-primary: #C4D2EE;
+	--ion-color-primary-rgb: 196,210,238;
+	--ion-color-primary-contrast: #000000;
+	--ion-color-primary-contrast-rgb: 0,0,0;
+	--ion-color-primary-shade: #acb9d1;
+	--ion-color-primary-tint: #cad7f0;
+
+	--ion-color-secondary: #0163aa;
+	--ion-color-secondary-rgb: 1,99,170;
+	--ion-color-secondary-contrast: #ffffff;
+	--ion-color-secondary-contrast-rgb: 255,255,255;
+	--ion-color-secondary-shade: #015796;
+	--ion-color-secondary-tint: #1a73b3;
+
+	--ion-color-tertiary: #F9F0D3;
+	--ion-color-tertiary-rgb: 249,240,211;
+	--ion-color-tertiary-contrast: #000000;
+	--ion-color-tertiary-contrast-rgb: 0,0,0;
+	--ion-color-tertiary-shade: #dbd3ba;
+	--ion-color-tertiary-tint: #faf2d7;
+
+	--ion-color-success: #D9D9D9;
+	--ion-color-success-rgb: 217,217,217;
+	--ion-color-success-contrast: #000000;
+	--ion-color-success-contrast-rgb: 0,0,0;
+	--ion-color-success-shade: #bfbfbf;
+	--ion-color-success-tint: #dddddd;
+
+	--ion-color-warning: #3D3D3D;
+	--ion-color-warning-rgb: 61,61,61;
+	--ion-color-warning-contrast: #ffffff;
+	--ion-color-warning-contrast-rgb: 255,255,255;
+	--ion-color-warning-shade: #363636;
+	--ion-color-warning-tint: #505050;
+
+    --ion-color-danger: #98B4C0;
+	--ion-color-danger-rgb: 152,180,192;
+	--ion-color-danger-contrast: #000000;
+	--ion-color-danger-contrast-rgb: 0,0,0;
+	--ion-color-danger-shade: #869ea9;
+	--ion-color-danger-tint: #a2bcc6;
+}
